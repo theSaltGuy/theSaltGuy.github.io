@@ -1,4 +1,38 @@
-h1{
-    font-family: Arial, Helvetica, sans-serif;
-    color: gray;
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: lightgray;
+}
+
+.parent{
+    width: 800px;
+    height: 600px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container{
+    display: grid;
+    place-items: center;
+    height: 85vh;
+    grid-template-columns: 60% 40%;
+}
+
+.left{
+    grid-template-rows: 70% 30%;
+}
+
+.left > div{
+    text-align: center;
+    margin: 10px 5px;
+}
+
+.right{
+    line-height: 0;
+}
+
+.container > div{
+    background-color: gray;
+    border: 1px solid black;
 }
